@@ -1,0 +1,26 @@
+include ../static/header.html
+style 
+    include ../static/style.css
+</head>
+body
+    div.container-fluid.mainContainer
+        div.row
+            div.col-md-6.imgCol
+
+            div.col-md-6.formCol
+                form.userLoginForm
+                    h1.formHeading1.mt-5 WELCOME :)
+                    h3.formHeading2 LOGIN TO ACCOUNT
+                    div.form-group.my-4
+                        input(id="inputEmail" type="email" placeholder="Email address" required="required" autofocus="" class="form-control form-control-lg text-dark")
+                    div.form-group.my-4
+                        input(id="inputPassword" type="password" placeholder="Password" required="" class="form-control form-control-lg text-dark")
+
+                    div.custom-control.my-3
+                        | <button type="submit" class="btn btn-primary text-uppercase mb-2 shadow-lg w-75 ">LOGIN</button> 
+                    
+                    div.text-center.d-flex.justify-content-between.mt-4
+                        p  OR &nbsp<a href="/signup" class="font-italic text-muted"> <u>Create New Account</u></a>
+                        
+
+include ../static/footer.html       

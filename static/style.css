@@ -1,0 +1,34 @@
+.mainContainer {
+  min-height: 100vh;
+}
+.imgCol {
+  height: 600px;
+  background-image: url("../static/img/loginBg1.png");
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signUpImgCol {
+  height: 600px;
+  background-image: url("../static/img/signupBg1.png");
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.userLoginForm,
+.userSignUpForm {
+  margin: 40px auto;
+}
+.formHeading1 {
+  font-size: 48px;
+}
+.userLoginForm input {
+  font-size: 21px;
+}
+.custom-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
