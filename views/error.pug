@@ -1,0 +1,8 @@
+include ../static/header.html
+style 
+    include ../static/style.css
+body     
+    div(class=" container-fluid my-5 h-100 errorContainer" onload="hideLoader")
+        img(src="../static/img/servererror.jpg", alt="CONNECTION-ERROR" title="www.freepik.com" height="400px" width="400px")
+        h1.display-1.text-center.text-danger CONNECTION ERROR !!
+        h1.display-5 APPLICATION IS NOT CONNECTING TO DATABASE SERVER

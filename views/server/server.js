@@ -7,9 +7,11 @@ mongoose.connect("mongodb://localhost/ems", {
 
 // ISTABLISH CONNECTION
 const db = mongoose.connection;
-// db.on("error", console.error.bind(console, "CONNECTION ERROR"));
-// db.once("open", () => {
-//   console.log("CONNECTED TO MONGO DATABASE");
-// });
+db.on("error", () => {
+  console.log("CONNECTION ERROR!!");
+});
+db.once("open", () => {
+  console.log("CONNECTED TO MONGO DATABASE");
+});
 
 module.exports = db;
